@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {StyleSheet, Text, Image, View, TouchableHighlight, StatusBar} from 'react-native';
 import {Actions} from "react-native-router-flux";
 import Button from "react-native-button";
-class Find extends Component {
+class Me extends Component {
 
     constructor(props) {
         super(props)
@@ -15,7 +15,8 @@ class Find extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Button onPress={Actions.login}>HOME</Button>
+                <Button onPress={Actions.login}>Login</Button>
+                <Button onPress={Actions.register}>Register</Button>
             </View>
         )
     }
@@ -33,4 +34,4 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     }
 })
-export default Find;
+export default Me;

@@ -19,8 +19,10 @@ import Launch from './app/components/Launch';
 import Login from './app/components/Login';
 import Register from './app/components/Register';
 
-import TabIcon from './app/components/TabIcon';
 import Find from './app/components/Find';
+import Me from './app/components/Me';
+
+import TabIcon from './app/components/TabIcon';
 import TabView from './app/components/TabView';
 
 const reducerCreate = params => {
@@ -55,7 +57,7 @@ class osc extends Component {
                         <Scene key="find" component={Find} initial={true} icon={TabIcon} hideNavBar={true}/>
                         <Scene key="search" component={TabView} title="发现" icon={TabIcon}
                                navigationBarStyle={styles.navigationBarStyle} titleStyle={styles.titleStyle}/>
-                        <Scene key="me" component={TabView} title="我" icon={TabIcon}
+                        <Scene key="me" component={Me} title="我" icon={TabIcon}
                                navigationBarStyle={styles.navigationBarStyle} titleStyle={styles.titleStyle}/>
                     </Scene>
                     <Scene key="login" direction="vertical" type="replace">
