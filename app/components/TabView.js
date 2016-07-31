@@ -17,7 +17,7 @@ class TabView extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Button onPress={Actions.pop}>TAB</Button>
+                <Button onPress={Actions.pop}>{this.props.title}</Button>
             </View>
         );
     }
