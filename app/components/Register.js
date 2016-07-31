@@ -53,12 +53,12 @@ class Register extends Component {
                 </View>
                 <View style={styles.signin}>
                     <Button onPress={()=>{
-                        Actions.pop()
+                        Actions.tab()
                     }} style={styles.whiteFont}>注册</Button>
                 </View>
                 <View style={styles.signup}>
                     <Button onPress={()=>{
-                        Actions.pop();
+                        // Actions.back();
                         Actions.login();
                     }} style={styles.greyFont}>已有账户? 立即登录</Button>
                 </View>

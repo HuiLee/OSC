@@ -58,25 +58,23 @@ class osc extends Component {
                         <Scene key="me" component={TabView} title="我" icon={TabIcon}
                                navigationBarStyle={styles.navigationBarStyle} titleStyle={styles.titleStyle}/>
                     </Scene>
-                    <Scene key="login" direction="vertical">
+                    <Scene key="login" direction="vertical" type="replace">
                         <Scene key="loginModal"
                                component={Login}
                                title="登录"
                                hideNavBar={false}
                                direction="vertical"
                                schema="modal"
-                               type='reset'
                                navigationBarStyle={styles.navigationBarStyle}
                                titleStyle={styles.titleStyle}/>
                     </Scene>
-                    <Scene key="register" direction="vertical">
+                    <Scene key="register" direction="vertical" type="replace">
                         <Scene key="registerModal"
                                component={Register}
                                title="注册"
                                hideNavBar={false}
                                direction="vertical"
                                schema="modal"
-                               type='reset'
                                navigationBarStyle={styles.navigationBarStyle}
                                titleStyle={styles.titleStyle}
                         />

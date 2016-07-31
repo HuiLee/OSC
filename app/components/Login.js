@@ -53,12 +53,12 @@ class Login extends Component {
                 </View>
                 <View style={styles.signin}>
                     <Button onPress={()=>{
-                        Actions.pop()
+                        Actions.tab()
                     }} style={styles.whiteFont}>登录</Button>
                 </View>
                 <View style={styles.signup}>
                     <Button onPress={()=>{
-                        Actions.pop();
+                        // Actions.back();
                         Actions.register();
                     }} style={styles.greyFont}>没账户? 立即注册</Button>
                 </View>
