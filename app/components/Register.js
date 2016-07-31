@@ -87,7 +87,6 @@ const styles = StyleSheet.create({
         backgroundColor: 'transparent'
     },
     mark: {
-        height: 150,
         fontSize: 30
     },
     signin: {

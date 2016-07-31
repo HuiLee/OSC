@@ -19,7 +19,10 @@ import Launch from './app/components/Launch';
 import Login from './app/components/Login';
 import Register from './app/components/Register';
 
+import Home from './app/components/Home';
 import Find from './app/components/Find';
+import Search from './app/components/Search';
+
 import Me from './app/components/Me';
 
 import TabIcon from './app/components/TabIcon';
@@ -48,17 +51,43 @@ class osc extends Component {
             <Scene key="modal" component={Modal}>
                 <Scene key="root" hideNavBar={true}>
                     <Scene key="launch" component={Launch} initial={true}/>
-                    <Scene key="tab" tabs={true} hideNavBar={false} tabBarStyle={styles.tabBarStyle}
+                    <Scene key="tab"
+                           tabs={true}
+                           hideNavBar={false}
+                           tabBarStyle={styles.tabBarStyle}
                            tabBarSelectedItemStyle={styles.tabBarSelectedItemStyle}>
-                        <Scene key="home" component={TabView} title="首页" icon={TabIcon}
-                               navigationBarStyle={styles.navigationBarStyle} titleStyle={styles.titleStyle}></Scene>
-                        <Scene key="message" component={TabView} title="消息" icon={TabIcon}
-                               navigationBarStyle={styles.navigationBarStyle} titleStyle={styles.titleStyle}></Scene>
-                        <Scene key="find" component={Find} initial={true} icon={TabIcon} hideNavBar={true}/>
-                        <Scene key="search" component={TabView} title="发现" icon={TabIcon}
-                               navigationBarStyle={styles.navigationBarStyle} titleStyle={styles.titleStyle}/>
-                        <Scene key="me" component={Me} title="我" icon={TabIcon}
-                               navigationBarStyle={styles.navigationBarStyle} titleStyle={styles.titleStyle}/>
+                        <Scene key="home"
+                               component={Home}
+                               title="首页" icon={TabIcon}
+                               navigationBarStyle={styles.navigationBarStyle}
+                               initial={true}
+                               titleStyle={styles.titleStyle}/>
+                        <Scene key="message"
+                               component={TabView}
+                               title="消息"
+                               icon={TabIcon}
+                               navigationBarStyle={styles.navigationBarStyle}
+                               titleStyle={styles.titleStyle}/>
+                        <Scene key="find"
+                               component={Find}
+                               icon={TabIcon}
+                               title="综合"
+                               hideNavBar={false}
+                               navigationBarStyle={styles.navigationBarStyle}
+                               titleStyle={styles.titleStyle}
+                        />
+                        <Scene key="search"
+                               component={Search}
+                               title="发现"
+                               icon={TabIcon}
+                               navigationBarStyle={styles.navigationBarStyle}
+                               titleStyle={styles.titleStyle}/>
+                        <Scene key="me"
+                               component={Me}
+                               title="我"
+                               icon={TabIcon}
+                               navigationBarStyle={styles.navigationBarStyle}
+                               titleStyle={styles.titleStyle}/>
                     </Scene>
                     <Scene key="login" direction="vertical" type="replace">
                         <Scene key="loginModal"
