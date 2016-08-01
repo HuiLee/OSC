@@ -31,7 +31,6 @@ import TabView from './app/components/TabView';
 const reducerCreate = params => {
     const defaultReducer = new Reducer(params);
     return (state, action) => {
-        console.log('ACTION:', action);
         return defaultReducer(state, action);
     };
 };

@@ -28,7 +28,7 @@ class Search extends Component {
                     ref='searchBar'
                     placeholder='搜索关键字...'
                     onChangeText={(keywords) => this.setState({keywords})}
-                    onSearchButtonPress={this.onSearch}
+                    onSearchButtonPress={this.refs.searchBar.unFocus}
                     onCancelButtonPress={()=>this.setState({keywords:""})}
                 />
             </View>

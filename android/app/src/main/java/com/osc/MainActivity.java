@@ -1,6 +1,7 @@
 package com.osc;
 
 import com.facebook.react.ReactActivity;
+import com.aakashns.reactnativedialogs.ReactNativeDialogsPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 
 public class MainActivity extends ReactActivity {
