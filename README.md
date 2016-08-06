@@ -33,9 +33,20 @@ use react-native-scrollable-tab-view as the tab view
 follow your mind, it is so easy to popup window anywhere
 
 
-developing...
+## DONE:
+
+- [x] - Launch  module
+- [x] - Router
+- [x] - Login && Register
+
+## TODO:
+
+- [ ] - Message
+- [ ] - User Profile
+- [ ] - Search List
+- [ ] - API
 
 
+## Questions:
 
-
-
+- Popup window for login and register page
