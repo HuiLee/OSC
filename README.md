@@ -1,21 +1,37 @@
-#  使用RN开发类似于开源中国类似的App应用,扩展基础组件,方便定制类似功能的移动应用
+#  Develop with OSC, it can save your time start with zero framework
 
-## 安装方式
+## Install
 
-> git clone https://github.com/HuiLee/osc.git
+> git clone https://github.com/HuiLee/osc.git 
+> 
 > cd osc && npm install
+> 
 > react-native run-ios
+> 
 > react-native run-android
 
-## 初始化Launch
+## Launch
 
-使用react-native-swiper组件,方便快捷,在Launch组件中
+use react-native-swiper as the player in lanuch page
 
-## 导航Tab
+## route
 
-使用react-native-router-flux做路由导航,可以同时兼容IOS,Android两个版本
+use react-native-router-flux as router, it can work on both IOS and Android
 
-使用react-native-vector-icons做图标,自定义强,方便好用
+use react-native-vector-icons as Icon,it has solutions more than eight ways
+
+## Searc Bar
+
+use react-native-search-bar as search component, it is beautify
+
+## Scroll Tab View
+
+use react-native-scrollable-tab-view as the tab view
+
+## Dialogs
+
+follow your mind, it is so easy to popup window anywhere
+
 
 developing...
 
